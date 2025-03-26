@@ -88,17 +88,6 @@ body{
     object-fit: cover;
 }
 
-.site-hero::before{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    content: "";
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /* overflow: hidden; */
-}
-
 .text-center{
     justify-items: center;
     position: absolute;
@@ -360,4 +349,71 @@ body{
 
 .ft-icons a{
     padding: 10px;
+}
+
+@media(max-width: 768px){
+    .hero-text h1{
+        font-size: 56px;
+    }
+
+    .simple-text{
+        font-size: 23px;
+    }
+
+    .text-center{
+        top: 30vh;
+    }
+
+
+    #next-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text h2{
+        font-size: 50px;
+    }
+
+    .footer-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ftcards{
+        padding: 20px 0px;
+    }
+}
+
+@media(max-width: 480px){
+    .hero-text h1{
+        font-size: 40px;
+    }
+    .simple-text{
+        font-size: 19px;
+    }
+    .section-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-text{
+        display: inline-block;
+    }
+    .text h2{
+        font-size: 30px;
+    }
+
+    #next-section img{
+        width: 370px;
+        height: 370px;
+        border-radius: 12%;
+    }
+
+    .text p{
+        font-size: 16px;
+    }
+
+    .footer-copyright{
+        font-size: 16px;
+    }
 }
