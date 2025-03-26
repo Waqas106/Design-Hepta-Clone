@@ -88,7 +88,7 @@ body{
     object-fit: cover;
 }
 
-.site-hero::before{
+/* .site-hero::before{
     position: absolute;
     background: rgba(0, 0, 0, 0.2);
     content: "";
@@ -96,8 +96,8 @@ body{
     bottom: 0;
     right: 0;
     left: 0;
-    /* overflow: hidden; */
-}
+    overflow: hidden;
+} */
 
 .text-center{
     justify-items: center;
@@ -218,4 +218,39 @@ body{
 
 .ft-icons a{
     padding: 10px;
+}
+
+@media(max-width: 768px){
+
+    .hero-text h1{
+        font-size: 56px;
+    }
+
+    .simple-text{
+        font-size: 23px;
+    }
+
+    .text-center{
+        top: 30vh;
+    }
+    .footer-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ftcards{
+        padding: 20px 0px;
+    }
+}
+
+@media(max-width: 480px){
+    .hero-text h1{
+        font-size: 40px;
+    }
+    .simple-text{
+        font-size: 19px;
+    }
+    .footer-copyright{
+        font-size: 16px;
+    }
 }
