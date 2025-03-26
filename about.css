@@ -88,7 +88,7 @@ body{
     object-fit: cover;
 }
 
-.site-hero::before{
+/* .site-hero::before{
     position: absolute;
     background: rgba(0, 0, 0, 0.2);
     content: "";
@@ -96,8 +96,8 @@ body{
     bottom: 0;
     right: 0;
     left: 0;
-    /* overflow: hidden; */
-}
+    overflow: hidden;
+} */
 
 .text-center{
     display: flex;
@@ -323,4 +323,61 @@ body{
 
 .ft-icons a{
     padding: 10px;
+}
+
+@media(max-width: 768px){
+    
+    .hero-text h1{
+        font-size: 56px;
+    }
+    .simple-text{
+        font-size: 23px;
+    }
+    
+    .text-center{
+        top: 30vh;
+    }
+
+    #next-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text h2{
+        font-size: 35px;
+    }
+
+    .footer-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ftcards{
+        padding: 20px 0px;
+    }
+}
+
+@media(max-width: 480px){
+   
+    .hero-text h1{
+        font-size: 40px;
+    }
+    .simple-text{
+        font-size: 20px;
+    }
+   
+    .section-text h2{
+        font-size: 30px;
+    }
+
+    #next-section img{
+        width: 400px;
+        height: 400px;
+        border-radius: 12%;
+    }
+
+    .team-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
