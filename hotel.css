@@ -184,6 +184,8 @@ body{
 
 .slider-section{
     padding:  126px 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .slider-text{
