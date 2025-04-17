@@ -244,6 +244,9 @@ body{
 }
 
 @media(max-width: 480px){
+    .mpic{
+        width: 400px;
+    }
     .hero-text h1{
         font-size: 40px;
     }
