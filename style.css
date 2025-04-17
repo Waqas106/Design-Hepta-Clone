@@ -570,6 +570,9 @@ body{
 }
 
 @media(max-width: 480px){
+    .scroll-down{
+        display: none;
+    }
     .hero-text h1{
         font-size: 40px;
     }
